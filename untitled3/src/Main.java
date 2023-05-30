@@ -44,10 +44,6 @@ public class Main {
                               System.out.println("Результат сложения: " + sum);
                               break;
                         case 3:
-                              if (nums == null) {
-                                    System.out.println("Ошибка: Массив не введен.");
-                                    break;
-                              }
                               int diff = 0;
                               for (int num : nums) {
                                     diff -= num;
@@ -55,10 +51,6 @@ public class Main {
                               System.out.println("Результат вычитания: " + diff);
                               break;
                         case 4:
-                              if (nums == null) {
-                                    System.out.println("Ошибка: Массив не введен.");
-                                    break;
-                              }
                               int product = 1;
                               for (int num : nums) {
                                     product *= num;
@@ -66,10 +58,6 @@ public class Main {
                               System.out.println("Результат умножения: " + product);
                               break;
                         case 5:
-                              if (nums == null) {
-                                    System.out.println("Ошибка: Массив не введен.");
-                                    break;
-                              }
                               int division = 1;
                               for (int num : nums) {
                                     division /= num;
@@ -77,24 +65,14 @@ public class Main {
                               System.out.println("Результат деления: " + division);
                               break;
                         case 6:
-                              if (nums == null) {
-                                    System.out.println("Ошибка: Массив не введен.");
-                                    break;
-                              }
                               System.out.println("Введите индекс элемента:");
                               int index = scanner.nextInt();
                               if (index >= 0 && index < nums.length) {
                                     int element = nums[index];
                                     System.out.println("Элемент по индексу " + index + ": " + element);
-                              } else {
-                                    System.out.println("Ошибка: Недопустимый индекс.");
                               }
                               break;
                         case 7:
-                              if (nums == null) {
-                                    System.out.println("Ошибка: Массив не введен.");
-                                    break;
-                              }
                               System.out.println("Введите элемент для поиска:");
                               int searchNum = scanner.nextInt();
                               int searchIndex = -1;
@@ -111,10 +89,7 @@ public class Main {
                               }
                               break;
                         case 8:
-                              if (nums == null) {
-                                    System.out.println("Ошибка: Массив не введен.");
-                                    break;
-                              }
+
                               System.out.println("Введенный массив:");
                               for (int num : nums) {
                                     System.out.print(num + " ");
